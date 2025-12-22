@@ -1,0 +1,26 @@
+{
+  "Parse Puzzle Input": {
+    "scope": "python",
+    "prefix": "parseinput",
+    "body": [
+      "type ParsedInput = ${2:list[str]}",
+      "",
+      "",
+      "def parse(puzzle_in: str) -> ParsedInput:",
+      "\t${1:return puzzle_in.splitlines()}"
+    ],
+    "description": "The boilerplate for parsing the puzzle input."
+  },
+  "Solve Part 1": {
+    "scope": "python",
+    "prefix": "solvepart1",
+    "body": ["def solve_part_1(parsed_in: ParsedInput) -> int:", "\t${0:...}"],
+    "description": "The boilerplate for part 1 of the solution."
+  },
+  "Solve Part 2": {
+    "scope": "python",
+    "prefix": "solvepart2",
+    "body": ["def solve_part_2(parsed_in: ParsedInput) -> int:", "\t${0:...}"],
+    "description": "The boilerplate for part 2 of the solution."
+  }
+}

@@ -1,0 +1,17 @@
+*               text=auto
+*.code-snippets text
+*.json          text
+*.lock          text
+*.md            text diff=markdown
+*.py            text diff=python
+*.toml          text
+*.txt           text
+
+.editorconfig   text
+.gitattributes  text export-ignore
+.gitignore      text export-ignore
+.gitkeep        text export-ignore
+.python-version text
+
+# Overrides
+.vscode/*.json linguist-language=jsonc

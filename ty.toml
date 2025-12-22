@@ -1,0 +1,9 @@
+[rules]
+division-by-zero = "error"
+unused-ignore-comment = "warn"
+
+[environment]
+root = ["./src", "./tests"]
+
+[src]
+exclude = ["**/.pytest_cache/", "inputs/"]
