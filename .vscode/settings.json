@@ -5,6 +5,8 @@
   "ruff.configurationPreference": "filesystemFirst",
   "ruff.configuration": "{workspaceFolder}/ruff.toml",
 
+  "evenBetterToml.formatter.columnWidth": 120,
+
   "[python]": { "editor.defaultFormatter": "charliermarsh.ruff" },
   "[toml]": { "editor.defaultFormatter": "tamasfe.even-better-toml" }
 }
