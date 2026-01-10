@@ -1,0 +1,19 @@
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Python
+.venv/
+**/__pycache__/
+
+# Python Tools
+.pytest_cache/
+.ruff_cache/
+
+# Puzzle Inputs
+inputs/year_*/day_*.txt
+
+# macOS
+**/.DS_Store

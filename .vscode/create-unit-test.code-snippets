@@ -1,0 +1,42 @@
+{
+  "Common Puzzle Input Test": {
+    "scope": "python",
+    "prefix": "testcommoninput",
+    "body": [
+      "from advent_of_code.puzzles.year_${1:year} import day_${2:day}",
+      "",
+      "",
+      "class TestSolution:",
+      "\t_PUZZLE_INPUT = day_${2:day}.parse(${3:puzzle_input})",
+      "",
+      "\tdef test_part_1(self) -> None:",
+      "\t\tassert day_${2:day}.solve_part_1(self._PUZZLE_INPUT) == ${4:expected_answer}",
+      "",
+      "\tdef test_part_2(self) -> None:",
+      "\t\tassert day_${2:day}.solve_part_2(self._PUZZLE_INPUT) == ${5:expected_answer}"
+    ],
+    "description": "Create a unit test for a solution with a common puzzle input.",
+    "isFileTemplate": true
+  },
+  "Unique Puzzle Input Test": {
+    "scope": "python",
+    "prefix": "testuniqueinput",
+    "body": [
+      "from advent_of_code.puzzles.year_${1:year} import day_${2:day}",
+      "",
+      "",
+      "class TestSolution:",
+      "\tdef test_part_1(self) -> None:",
+      "\t\tparsed_in = day_${2:day}.parse(${3:puzzle_input})",
+      "",
+      "\t\tassert day_${2:day}.solve_part_1(parsed_in) == ${4:expected_answer}",
+      "",
+      "\tdef test_part_2(self) -> None:",
+      "\t\tparsed_in = day_${2:day}.parse(${5:puzzle_input})",
+      "",
+      "\t\tassert day_${2:day}.solve_part_2(parsed_in) == ${6:expected_answer}"
+    ],
+    "description": "Create a unit test for a solution with unique puzzle inputs.",
+    "isFileTemplate": true
+  }
+}

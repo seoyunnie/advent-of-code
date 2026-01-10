@@ -1,0 +1,46 @@
+[project]
+name = "advent-of-code"
+version = "0.1.0"
+dependencies = ["colorama>=0.4.6", "networkx>=3.6.1", "numpy>=2.4.1", "scipy>=1.16.3", "shapely>=2.1.2"]
+requires-python = ">=3.14"
+authors = [{ name = "Seoyun" }]
+description = "Seoyun's solutions for Advent of Code problems throughout the years."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE.txt"]
+keywords = ["advent-of-code", "advent-of-code-2023", "advent-of-code-2024", "advent-of-code-2025", "python", "python3"]
+classifiers = [
+  "Private :: Do Not Upload",
+  "Environment :: Console",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: English",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.14",
+]
+
+[project.urls]
+Homepage = "https://github.com/seoyunnie/advent-of-code#readme"
+Repository = "https://github.com/seoyunnie/advent-of-code.git"
+
+[project.scripts]
+solve = "advent_of_code.cli:main"
+
+[dependency-groups]
+dev = [
+  "pytest>=9.0.2",
+  "ruff>=0.14.11",
+  "scipy-stubs>=1.16.3.3",
+  "ty>=0.0.11",
+  "types-networkx>=3.6.1.20251220",
+  "types-shapely>=2.1.0.20250917",
+]
+
+[tool.uv.workspace]
+members = ["example-pkg"]
+
+[build-system]
+requires = ["uv_build>=0.9.24,<0.10.0"]
+build-backend = "uv_build"

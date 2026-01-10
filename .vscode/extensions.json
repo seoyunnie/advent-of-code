@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "editorconfig.editorconfig",
+
+    /* Python */
+    "ms-python.python",
+    "charliermarsh.ruff",
+    "astral-sh.ty",
+
+    /* TOML */
+    "tamasfe.even-better-toml"
+  ]
+}
